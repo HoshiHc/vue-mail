@@ -1,0 +1,14 @@
+.menu {
+  height: 717px;
+  text-align: center;
+}
+.menu .el-menu {
+  height: 100%;
+  border: none;
+  color: wheat;
+}
+.menu .el-menu h1 {
+  font-size: 1.5rem;
+  color: gray;
+  line-height: 2rem;
+}

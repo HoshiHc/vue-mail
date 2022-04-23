@@ -1,14 +1,27 @@
 import Vue  from 'vue'
 import VueRouter from "vue-router"
-import Home from "../view/Home.vue"
+import Mine from "../view/Mine.vue"
 
 Vue.use(VueRouter)
-// 给vuerouter进行全局引入
+
 const routes=[
     {
         path:"/",
-        name:"Home",
-        component:Home
+        name:"Mine",
+        component:Mine,
+        children:[
+            {
+               path:"/Home",
+               name:"home",
+               component:()=>import("../view/home/home.vue")
+            },
+            {
+                path:"/user",
+                name:"user",
+                component:()=>import("../view/user/user.vue")
+            },
+        
+        ]
     
     }
 ]
