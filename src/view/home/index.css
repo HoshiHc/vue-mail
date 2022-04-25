@@ -81,6 +81,12 @@
   padding-top: 10px;
   height: 250px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Home .z_echter .frist_echterf {
+  width: 600px;
+  height: 250px;
 }
 .Home .graph {
   margin-top: 10px;
@@ -89,6 +95,6 @@
   justify-content: space-between;
 }
 .Home .graph .graph_y {
-  width: 47%;
+  width: 350px;
   height: 260px;
 }

@@ -8,7 +8,10 @@ import {
 } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from "axios"
+// 引入模拟数据mock
+import "./api/mock.js"
 import store from "./store"
+// 引入vuex进行数据管理
 import router from "./router"
 
 Vue.use(Button);
