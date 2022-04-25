@@ -7,8 +7,10 @@ import {
   ,TableColumn
 } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import axios from "axios"
 import store from "./store"
 import router from "./router"
+
 Vue.use(Button);
 Vue.use(Container)
 Vue.use(Main)
@@ -32,6 +34,8 @@ Vue.use(Table)
 Vue.use(TableColumn)
 Vue.config.productionTip = false
 
+Vue.prototype.$http = axios
+// axios全局注入的方式
 new Vue({
   store,
   router,

@@ -36,15 +36,25 @@
           :style="{background:itme.color}"
           ></i>
           <div class="detail">
-
+             <p> ${{itme.value}}</p>
+             <p>{{itme.name}}</p>
           </div>
          </el-col>
+       </div>
+       <el-card class="z_echter">
+          
+       </el-card>
+       <div class="graph">
+          <el-card class="graph_y"></el-card>
+          <el-card class="graph_y"></el-card>
        </div>
     </el-col>
   </el-row>
 </template>
 
 <script>
+import {getmenu} from "../../api/data.js"
+// 引入data.js文件，并且从其中结构出对应axios的方法
 export default {
   name: "Home",
   data() {
@@ -93,10 +103,46 @@ export default {
           value:200,
           icon:"success",
           color:"red"
-        }
+        },
+        {
+          name:"今日支付订单",
+          value:200,
+          icon:"success",
+          color:"red"
+        },
+          {
+          name:"今日支付订单",
+          value:200,
+          icon:"success",
+          color:"red"
+        },
+          {
+          name:"今日支付订单",
+          value:200,
+          icon:"success",
+          color:"red"
+        },
+        {
+          name:"今日支付订单",
+          value:200,
+          icon:"success",
+          color:"red"
+        },
+          {
+          name:"今日支付订单",
+          value:200,
+          icon:"success",
+          color:"gary"
+        },
       ]
       
     };
+  },
+  mounted(){
+    // 挂载之后
+    getmenu().then(res =>{
+      console.log(res.data+"1111");
+    })
   }
 };
 </script>

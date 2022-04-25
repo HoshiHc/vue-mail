@@ -68,10 +68,47 @@
     // 右侧部分
     .right{
         // background-color:gray;
-       .icon{
-         color: wheat;
-       }
-        
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        .el-col{
+            flex: 0 0 30%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: left;
+            margin-bottom: 5px;
+            .icon{
+                width: 80px;
+                height: 80px;
+               
+                color: wheat;
+                font-size: 3rem;
+                text-align: center;
+                line-height: 80px;
+              }
+              .detail{}
+              
+        }
+       
+    }
+    .z_echter{
+        margin-top: 10px;
+        padding-top: 10px;
+        height: 250px;
+        width: 100%;
+
+    }
+    // 上面时折线图
+    // 下面时两个饼状图
+    .graph{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .graph_y{
+            width: 47%;
+            height: 260px;
+        }
     }
 
 }
